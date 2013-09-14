@@ -1,0 +1,8 @@
+Peter - 9/14 {
+	I figured that we could just keep a log of what we're doing and any ideas we have re:the project.
+	I created a models notes page to get some ideas about what kind of back-end models we'll need for the initial sprint.
+	
+	My idea for this first sprint is to simply have a page where a user can faux-login, then view a page of their accounts, click into those and get a quick summary of their remaining balance and transactions. Regarding authentication, I figured it could just be simple mock-authentication, but I'm also open to using some Express authentication framework if you want. I found this: http://everyauth.com/ and it looks like it has a lot of support and appears to be fairly straightforward. 
+
+	I'm not sure how formal of agile you wanted to go with this, but I'm down for any real management strategies, whether that be simply setting a date to complete this first sprint by, or even hashing out some real tasks in some project management app (tasky? :-P).
+}

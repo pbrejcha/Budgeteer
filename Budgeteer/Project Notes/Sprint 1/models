@@ -1,0 +1,17 @@
+bank account:
+	- id
+	- bank account owner
+	- total balance
+	- posted transactions
+	- pending transactions
+
+transaction:
+	- id
+	- bank account id (FK to bank account)
+	- transaction type ({withdrawal or payment}, deposit, transfer)
+	- amount
+	- date
+
+user:
+	- bank accounts
+	- login/password (if mock authentication)
