@@ -6,3 +6,15 @@ Peter - 9/14 {
 
 	I'm not sure how formal of agile you wanted to go with this, but I'm down for any real management strategies, whether that be simply setting a date to complete this first sprint by, or even hashing out some real tasks in some project management app (tasky? :-P).
 }
+Peter - 9/15 {
+	I installed Git Flow for branch management while developing this thing. We use it on my current project at work and it's been really nice for independent development of different project features. It's pretty easy to get going on Mac. Install homebrew if you haven't already (http://brew.sh/ link at the bottom of the page). After that's installed, type in 'brew install git-flow', no quotes, to install git-flow. 
+
+	The basic premise behind git flow is that your branches are separated by responsibilities. The master branch is the release branch used only for major project releases. The develop branch should only contain stable code and is where you would merge future release features to. Most of the development is done on feature branches (these will be prefixed by 'feature/'). For instance, if we had just completed a release, and were sitting on the release branch, the work flow might go something like:
+	-on release branch: git flow feature start MYNEWFEATURE
+	-on feature/MYNEWFEATURE: {do work, code} {commit often so we have places to revert to, push to origin}
+	-on feature/MYNEWFEATURE: git checkout develop
+	-on develop: git merge feature/MYNEWFEATURE
+	-on develop: {add, commit, and push to remote repo}
+
+	For a more in-depth explanation, take a look at http://danielkummer.github.io/git-flow-cheatsheet/ 
+}
