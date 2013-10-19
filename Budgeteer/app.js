@@ -10,7 +10,7 @@ var http = require('http');
 var path = require('path');
 var mongoose = require('mongoose');
 
-
+var db = mongoose.createConnection('localhost', 'Budgeteer');
 var app = express();
 
 // all environments
@@ -30,6 +30,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+var db = mongoose.createConnection('localhost', 'Budgeteer');
 app.get('/', routes.index);
 app.get('/users', user.list);
 
