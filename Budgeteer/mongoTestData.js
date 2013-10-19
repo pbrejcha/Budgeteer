@@ -2,7 +2,8 @@
 Mongo shell script for creating a connection, making/connecting to a DB,
   and entering test data into the DB
 
-
+To Run:
+Type 'mongo mongoTestData.js' into terminal of root dir of project
 
 
 Delete a database:
